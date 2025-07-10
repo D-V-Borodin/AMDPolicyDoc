@@ -57,6 +57,11 @@ Energy averaged collision data as a preferred format to reduce the size of the e
 New data requests should be prioritized. At present, e+W excitation, H^+(D,T) + W - CX
 
 
+### Surface data
+We leave that generally for a dedicated discussion, but clear that it should be as much in line with the A&M data
+Surface data is not limited to sputtering yields, but also reflection, surface recombination,implantation, etc, with dependencies not only on incident particle but also on surface state and composition/history
+
+There is a close connection between the surface data and the boundary condition for the molecular data as the surface can affect the ro-vib state of the molecule starting at the surface.  The more general discussion of surface data needs to be considered, but is not covered in this document.  Many of the points with regard to metadata and data formats are also expected to be important for surface data.
 
 
 

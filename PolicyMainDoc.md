@@ -29,7 +29,7 @@ The initiative group aims at reaching concreete goals in the interest of fundame
 
 The informal initiative group, inspired by the F.A.I.R principles, proposes for consideration:
 1)	Set of data management policies - “Best practices”  regarding the joint work on A&M data. It is based on experience of fusion-relevant datasets development. Those policieds are suggested for a broader use far beyong the intiviative group.
-2) Proposal for next steps to be undertaken in the extablishment and axtention of the fusion-relevant A&M data bases, development CRMs and usage inside fusion codes. 
+2) Proposal for next steps to be undertaken in the extablishment and extention of the fusion-relevant A&M data bases, development CRMs and usage inside fusion codes. 
 3) A procedure to assess and recommend datasets for use in fusion modelling (including validatiion,quality and accuracy assesment, adequate resolution and formatting). 
 
 
@@ -55,27 +55,68 @@ There is a close connection between the surface data and the boundary condition 
 Surface data is not limited to sputtering yields, but also includes reflection, surface recombination, implantation, etc, with dependencies not only on incident particle but also on surface state and composition/history. 
 
 
+## BEST PRACTICES with working on A&M data
+
+All data should be properly documented, for which we recommend to use schemas and other similar technologies rather than just describing the data as a text. 
+
+Each data file (or group of files) should contain metadata block  in an agreed format (JSON with a schema) mandatory containing at least:
+a)	data origin (DOI, reference etc.) and date of production 
+a1) unique ID
+a2) clearly indicate the licensing associated with the data
+b1)  data accuasition type (calculated, compiled, measured, etc.)
+b2)  data nature type (cross-section, rate, etc.)
+c)  base process (e.g. base reaction or rection type)
+d)  reference to a detailed data descrition document (files structure, units etc).
+e)  general description of the data (probaly at least as a comment,best containing the link to detailed description).
+f) at least general statement about the data validity range and specifying extrapolation methods
+g) at least general statement on the data accuracy and validation 
+h) sublayered metadata for all included data (whenever possible)
+and optionally containing further data description.
+We refer to the provided examples of the JSON metadata files described in the dedicated subsection "Metadata examples". 
+
+In addition to the mandatory points listerd above we recomend extend the metadata with optional points. 
+a) use the CollisionDB ontology (https://db-amdis.org/collisiondb/) to identify species, reactions (https://amdis.iaea.org/databases/processes/), etc.
+b) Indicate the best interpolation method for data tables
 
 
 
 
+These metadata blocks can be leveraged with the following practices:
 
+1)	All data users are recommended to keep the list of the data in use (and also the history of it) based on that list of recommendations. The unified assesment of the data from this group should use that information and regularly release the unified recommendation list (of course with additional checks and considerations).
+2)	Do data processing as automatic as possible and make the routines available (API approach is a good pratice) as open source with necessary documentation.
+3)	 I/O routines should be open source; they should be universally applicable to all files of that format (versioning of any format is a must).
+4) Possible use the pyvalem toolbox (https://github.com/xnx/pyvalem) to standardise the conversion of the data description to the metadata blocks.
+5) Establish a set of stadartized inter- and exrapolation routines (open source).
+6) With regard to licencing, it is preferrable to use the well-established sets of licences such as e.g. the creative commons CC BY-ND (Attribution-NoDerivatives) which  was suggested to allow use by commercial entities (i.e. all private fusion companies).  
+// Footnote: List of licences https://creativecommons.org/share-your-work/cclicenses/
+7) Motivate and assist to proper referencing of the data:
+    -	provides (if possible) a DOI that can be used to refer to the data source and a DOI for one or more publications describing the data
+    -	provides a DOI that relates to the validation method of the data
+    -	provides a list of references to be cited when the data is used
+    -	Provide references to use cases of the data with indication of success.
+    -	Provide reference to validation cases (if available) including the validation category.
 
+8) Following the metadata format decided above, make any necessary changes to the IMAS Data Dictionary as it relates to such matters
 
+9) In accordance with F.A.I.R keep metadata open even for a closed datasets. Make it available even in case when the actual data is no longer accesable. 
 
+## Next steps 
 
-
-New data requests should be prioritized. At present, e+W excitation, H^+(D,T) + W - CX
-
-Those can come from different atomic/molecular data providers (ADAS, IAEA database, NIFS, NIST etc.) 
-
-This is largely satisfied by ADAS, mainly ADF11 and ADF15 datasets
+1) New data requests should be prioritized. At present, e+W excitation, H^+(D,T) + W - CX
+Those can come from different atomic/molecular data providers (ADAS, IAEA database, NIFS, NIST etc.) This is largely satisfied by ADAS, mainly ADF11 and ADF15 datasets
 Process resoloved data is available from D.Fursa group (own database…) but it is recommended to take the data via CollisionDB. This is fundamental cross section data (including differential ones). This data may partially be already available in ADAS; if missing, but higher level data is needed the participants of this group are welcome to take the effort to put the data (after reasonbable checks) to ADAS.
 
-Expansion of ADF15 line transitions list available for spectroscopic data comparison with codes. The fundamental data may already exist but just needs post-processing. There is some ITPA-diagnostics effort to collate desired line lists. There may be merit in curating a smaller set of files specifically for AMNS purposes.
+2) Expansion of ADF15 line transitions list available for spectroscopic data comparison with codes. The fundamental data may already exist but just needs post-processing. There is some ITPA-diagnostics effort to collate desired line lists. There may be merit in curating a smaller set of files specifically for AMNS purposes. Make the tools for producing such data open source, well documented and commonly available.
 
-Some dedicated effort must be made to bring the finer data at the individual rate level to the coarser description needed by many codes (effective cooling rates, total radiation emissivity, total particle balance)
+3) Some dedicated effort must be made to bring the finer data at the individual rate level to the coarser description needed by many codes (effective cooling rates, total radiation emissivity, total particle balance).
 
-For ADAS formats, and particularly those used by major fusion modelling codes, add in a metadata block (following FAIR definition) to include summary of contents, ranges, dependencies and units. This should be separate from the existing comments.
+4) Consider providing means to document automatically the particular dataset use experience (in the codes or analisis).
 
 
+
+5) Recommendation 1: That the IPP group lead by Ursel Fantz generate a new set of AMJUEL-like files based on the MCCC data as used by YACORA; that this file / these files be passed to Xavier Bonnin at ITER where he will rerun the hydrogen fueling scan and document any differences that might arise; these results will appear in a conference presentation and a paper.  After this the data should be made more generally available (e.g. at PLOUTOS meaning as a standard input for EIRENE, SOLPS and other related packages). 
+
+In the longer term, it should be considered if the AMJUEL format is the desired format going forward, and to identify an alternative format if appropriate.
+
+6) Recommendation 2. As part of the IMAS-ification activity within the TSVV-5 EUROfusion activity, have EIRENE and/or its ancillary program be able to read data in using the AMNS library from IMAS. Longer term, encourage other codes to support that format.

@@ -1,5 +1,5 @@
 
-# Policy proposal on the production and management of atomic and molecular data for fusion modelling.
+# Policy proposal on the management of atomic and molecular data for fusion modelling
 
 2024-11-25 – 2025-07-11
 
@@ -7,8 +7,11 @@
 
 ## Preamble
 
-This document was started at the “Meeting on unified A&M data policies” in FZ Juelich (see https://indico.euro-fusion.org/event/3240/) with the continuation of the discussion supported by a dedicated IAEA TM  (see https://conferences.iaea.org/e/GNAMPP-3). It reflects the views of the informal researcher group formed during those meeting including indirect participants.
-This document is a product of those discussions and joint effort approved by consensus between the main participants listed in section "Pariticipants".
+This document was initiated as an outcome of the “Meeting on unified A&M data policies” in FZ Juelich (see https://indico.euro-fusion.org/event/3240/) triggered at the Decennial IAEA Technical Meeting on Atomic, Molecular and Plasma-Material Interaction Data for Fusion Science and Technology 2024 (AMPMI 2024) held at the University of Helsinki, Finland, with follow-up discussion supported by a dedicated IAEA TM (see https://conferences.iaea.org/e/GNAMPP-3). It reflects the views of the informal researcher group formed during those meeting including indirect participants.
+This document is a product of those discussions and joint effort approved by consensus between the main participants listed in section "Participants".
+
+->1 Link Helsinki
+
 
 ## Participants
 
@@ -18,9 +21,8 @@ The following researches each with long experience of working (producing, utiliz
 
 
 ## Purpose of this document
-This meeting brought together data users (i.e. people responsible for modelling codes) and data providers and aimed at identifying ways of improving the process of producing and managing atomic and molecular (A&M) and plasma-material interaction (PMI) data in fusion modelling codes.   The hope is that this document will trigger a broader response in the community in developing standards for data sharing.  The suggested standards are agnostic towards the codes that might use the data, data production and validation tools - we aim for aare aimed in commonly accepted, unified approach.   
-The initiative group aims at reaching concreteconcreete goals in the interest of fundamental fusiuon research aims at reaching concrete goals in the interest of fundamental fusion research. We are open for broader cooperation and participation and count on support from ITER, EUROfusion and, in particular, the IAEA (as the initiative was triggered by the discussions at IAEA Ddecennial Mmeeting on A&M and PMSI data),
-This meeting was triggered by discussions at the Decennial IAEA Technical Meeting on Atomic, Molecular and Plasma-Material Interaction Data for Fusion Science and Technology 2024 (AMPMI 2024) held at the University of Helsinki, Finland and aims at reaching concrete goals in the interest of fundamental fusion research. 
+This initiative has brought together data users (i.e. people responsible for modelling code or researchers interpreting diagnostics and analysing experoiments) and data providers.  It aims at identifying ways of improving the management of atomic and molecular (A&M) and plasma-material interaction (PMI) data in fusion applications. The hope is that this document will trigger a broader response in the community in developing standards for data sharing.  The suggested standards are agnostic towards the codes that might use the data, data production methods and validation tools - we aim for commonly accepted, unified approach.   
+The initiative group aims at reaching concreete goals in the interest of fundamental fusion research. We are open for broader cooperation and participation and count on support from ITER, EUROfusion and the IAEA (as this intiative is strongly supported by the A&M Data Unit).
 
 
 ## Executive summary

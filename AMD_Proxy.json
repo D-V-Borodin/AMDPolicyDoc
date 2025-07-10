@@ -1,0 +1,27 @@
+{
+    "qid": "D102563",
+    "reaction": "H+ + H 1s \u2192 H 1s + H+",
+    "process_types": {
+        "HCX": "Charge Transfer"
+    },
+    "data_type": "cross section",
+    "refs": {
+        "B32": {
+            "doi": "10.1016/j.adt.2019.05.002"
+        }
+    },
+    "comment": "State selective electron capture cross sections in H+ + H collisions using a semiclassical close-coupling approach. Cross sections represent the average values of the results obtained with two basis sets and the uncertainties provide the estimate of convergence of the cross sections",
+    "method": "CC",
+    "columns": [
+        {
+            "name": "E",
+            "units": "eV.u-1"
+        },
+        {
+            "name": "sigma",
+            "units": "cm2"
+        }
+    ],
+    "metadata_version": "M1.0",
+    "time_added": "2022-06-14 07:20:20.135592+00:00"
+}

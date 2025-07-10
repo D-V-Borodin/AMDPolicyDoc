@@ -44,5 +44,16 @@
     },
     "MetadataVersion": "M1.0",
     "Date_Time_DataCreated": "2045-06-14 07:20:20.135592+00:00",
-    "Date_Time_EntreeAdded": "2025-06-14 07:20:20.135592+00:00"
+    "Date_Time_EntreeAdded": "2025-06-14 07:20:20.135592+00:00",
+    "DataDependences":{
+        "Dep1":{
+            "CorrespondsTo":{
+                "ReactionTag": ["Tag1", "Tag2"],
+                "Publication": "???",
+                "CopyOfMetadata": {
+                    "//": "==== FULL Copy of Metadata of the dependency ===="
+                }
+            }
+        }
+    }
 }

@@ -1,27 +1,48 @@
 {
-    "qid": "D102563",
-    "reaction": "H+ + H 1s \u2192 H 1s + H+",
+    "//": "======  Proxy for AMD recomended JSON MetaData fie  ======",
+    "//": "Based on CollisionDB header",
+    "//": "==========================================================",
+    "//": "----- MANDATORY ------",
+    "DataOrigin": "ADAS",
+    "AMD_ID": "ABC123",
+    "//": "Calculated/Compiled/Measured/Unspecified...",
+    "DataType": "Calculated",
+    "CalculationMethod": "CRM-LTE adf11(GCR)",
+    "BaseReaction": "B(q1) + e --> B(q+1) + 2e",
+    "//": "----- optional! ------",
+    "Reactions": {
+        "Tag1": "B^0 + e --> B^1+ 2e",
+        "Tag2": "B^1+ + e --> B^2+ 2e",
+        "TagNN": "....."
+    },
     "process_types": {
-        "HCX": "Charge Transfer"
+        "EIZ": "Electron impact ionisation",
+        "Cmt": "Cab be multiple"
     },
-    "data_type": "cross section",
+    "data_type": "Maxwellian-averaged rate coefficients",
     "refs": {
-        "B32": {
+        "Ref1": {
+            "ReactionTag": "Tag1",
+            "ProvessType": "IZ",
             "doi": "10.1016/j.adt.2019.05.002"
+        },
+        "Ref2": {
+            "ReactionTag": "Tag2",
+            "ProvessType": "IZ",
+            "Private communication": "Ghost of Landau"
         }
     },
-    "comment": "State selective electron capture cross sections in H+ + H collisions using a semiclassical close-coupling approach. Cross sections represent the average values of the results obtained with two basis sets and the uncertainties provide the estimate of convergence of the cross sections",
-    "method": "CC",
-    "columns": [
-        {
-            "name": "E",
-            "units": "eV.u-1"
-        },
-        {
-            "name": "sigma",
-            "units": "cm2"
-        }
-    ],
-    "metadata_version": "M1.0",
-    "time_added": "2022-06-14 07:20:20.135592+00:00"
+    "comment": "Generalized collision-radiative model",
+    "method": "Stationary CRM",
+    "MainDataContent": "Effective Rate coefficients for electronic-driven processes in hot plasma [cm-3*s]",
+    "DataRange": "Ne, Te caracteristic for fusion plasmas, for all charges of B",
+    "Data_Sturcture+Units_Description": {
+       "Structure": "Data blocks for variing change",
+       "Main value": "Rate (Ne, Te)",
+       "Units": "Te [eV], Ne [cm-3], Rate [cm^3/s]",
+       "Ref_DataDescrition": "www.adas.ac.uk: manual_adf11.pdf"
+    },
+    "MetadataVersion": "M1.0",
+    "Date_Time_DataCreated": "2045-06-14 07:20:20.135592+00:00",
+    "Date_Time_EntreeAdded": "2025-06-14 07:20:20.135592+00:00"
 }

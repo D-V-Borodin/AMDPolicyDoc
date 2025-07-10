@@ -27,20 +27,21 @@ The initiative group aims at reaching concreete goals in the interest of fundame
 
 ## Executive summary
 
-The meeting has triggered a creation of informal initiative group which proposes 2 documents for consideration:
-1)	Policy document - “Best practices”  regarding the joint work on A&M data to be applied at least to owun work first,  but later on (after reaching maturity by that experience) can be suggested for a broader use.
-2)	Proposal for next steps to be undertaken in the interest of joint development of A&M data bases, CRMs and related entrees to the fusion codes. 
-The initial draft of the documents formulated, the work should continue after the meeting. 
-We aim to seek more solid support from… 
-We aim at developing a procedure to assess and recommend for use in fusion modelling the datasets (including validatiion, other quality assesment, adequate resolution and format). 
+The informal initiative group, inspired by the F.A.I.R principles, proposes for consideration:
+1)	Set of data management policies - “Best practices”  regarding the joint work on A&M data. It is based on experience of fusion-relevant datasets development. Those policieds are suggested for a broader use far beyong the intiviative group.
+2) Proposal for next steps to be undertaken in the extablishment and axtention of the fusion-relevant A&M data bases, development CRMs and usage inside fusion codes. 
+3) A procedure to assess and recommend datasets for use in fusion modelling (including validatiion,quality and accuracy assesment, adequate resolution and formatting). 
+
 
 ## Data types addressed in this document
 
+A&M data can vary significanly due to production methods and inteded use. For instance the data can have critically differing level of detail (bundled or resolved by ionisation states, resolved by internal states (generalized metastables), resolved by Rydberg, SLJ-terms, rovibrational states in moleculaer species etc. Often in addition to the base fundamental data we need to have effective data produced for particular modelling tasks (with additional assuptions and hidden parameters). This may lead to multiple datasets for the same species and processes, which cannot be sorted just by quality as a parameter, but need additional despription for proper selection in a view of a given application.
+
+Below we list the most commonly used datatypes used in the fusion plasma modelling.
+
 ### Atomic data
 
-Data with variable resolution (bundled or resolved by ionisation states, resolved by internal states (generalized metastables), resolved by Rydberg, SLJ-terms etc. states  
-
-Rate coefficients (basic data calculated for particular transitions depending only on Te as well as higher level - “effective rates” depending on ne as well). Effective rates may also have more parameters (e.g. ne, initial conditions,resolution level, assumptions on bundling, Te and Ti relation etc.) So, it may dependent on multiple parameterers specific for the case at hand, which is also the current practice with ADAS - to produce such datasets with varios resolution by states on request.  incl. Also parameter-dependent)
+Rate coefficients (basic data calculated for particular transitions depending only on Te as well as higher level - “effective rates” depending on ne as well). Effective rates may also have more parameters (e.g. ne, initial conditions,resolution level, assumptions on bundling, Te and Ti relation etc.) So, it may dependent on multiple parameterers specific for the case at hand, which is also the current practice with ADAS - to produce such datasets with varios resolution by states on request. incl. Also parameter-dependent)
 This is largely satisfied by ADAS, mainly ADF11 and ADF15 datasets
 
 

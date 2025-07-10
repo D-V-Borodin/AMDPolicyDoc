@@ -32,6 +32,31 @@ The initial draft of the documents formulated, the work should continue after th
 We aim to seek more solid support from… 
 We aim at developing a procedure to assess and recommend for use in fusion modelling the datasets (including validatiion, other quality assesment, adequate resolution and format). 
 
+## Data types addressed in this document
+
+### Atomic data
+
+Data with variable resolution (bundled or resolved by ionisation states, resolved by internal states (generalized metastables), resolved by Rydberg, SLJ-terms etc. states  
+
+Rate coefficients (basic data calculated for particular transitions depending only on Te as well as higher level - “effective rates” depending on ne as well). Effective rates may also have more parameters (e.g. ne, initial conditions,resolution level, assumptions on bundling, Te and Ti relation etc.) So, it may dependent on multiple parameterers specific for the case at hand, which is also the current practice with ADAS - to produce such datasets with varios resolution by states on request.  incl. Also parameter-dependent)
+This is largely satisfied by ADAS, mainly ADF11 and ADF15 datasets
+
+
+Process resoloved data is available from D.Fursa group (own database…) but it is recommended to take the data via CollisionDB. This is fundamental cross section data (including differential ones). This data may partially be already available in ADAS; if missing, but higher level data is needed the participants of this group are welcome to take the effort to put the data (after reasonbable checks) to ADAS.
+
+Expansion of ADF15 line transitions list available for spectroscopic data comparison with codes. The fundamental data may already exist but just needs post-processing. There is some ITPA-diagnostics effort to collate desired line lists. There may be merit in curating a smaller set of files specifically for AMNS purposes.
+
+Some dedicated effort must be made to bring the finer data at the individual rate level to the coarser description needed by many codes (effective cooling rates, total radiation emissivity, total particle balance)
+
+For ADAS formats, and particularly those used by major fusion modelling codes, add in a metadata block (following FAIR definition) to include summary of contents, ranges, dependencies and units. This should be separate from the existing comments.
+
+### Cross-section data
+Requires collection of data from different atomic/molecular data providers (ADAS, IAEA database, NIFS, NIST etc.)
+Collision cross-section types: state resolved/unresolved, total and differential. 
+Energy averaged collision data as a preferred format to reduce the size of the extremely high resolutions needed for resonance effects (eg R-matrix with 100,000s point per transition).
+New data requests should be prioritized. At present, e+W excitation, H^+(D,T) + W - CX
+
+
 
 
 

@@ -3,19 +3,23 @@
     "//": "Based on CollisionDB header",
     "//": "==========================================================",
     "//": "----- MANDATORY ------",
-    "DataOrigin": "MCCC: Molecular convergent close-coupling group,Curtin University",
-    "AMD_ID": "???",
+    "DataOrigin": "MCCC: Molecular convergent close-coupling group, Curtin University",
+    "AMD_ID": "?....",
     "//": "Calculated/Compiled/Measured/Unspecified...",
     "DataType": "Calculated",
     "CalculationMethod": "MCCC: Molecular convergent close-coupling",
     "BaseReaction": "H2 X(1Sigma+g) v=0 + e --> H2 B(1SIGMA+u) v=1 + e",
     "//": "----- optional! ------",
     "process_types": {
-        "EEX": "Electron impact excitaion"
+        "EEX": "Electron impact excitaion",
         "EXV": "Vibrational Excitation"
 },
     "data_type": "Cross section | uploaded on 2022-05-26",
-    "refs": {Scarlett et al., Atom. Data Nucl. Data Tables (2021)      
+"refs": {
+        "Ref1": {
+            "ReactionTag": "Tag1",
+            "cite": "Scarlett et al., Atom. Data Nucl. Data Tables (2021)"
+        }
     },
     "comment": "MCCC calculations of vibrationally-resolved electronic excitation of H2, adiabatic nuclei calculations performed with the spheroidal MCCC(210) model",
     "MainDataContent": "cross section",
@@ -23,7 +27,7 @@
     "Data_Sturcture+Units_Description": {
        "Structure": "Data blocks for variing change",
        "Main value": "Rate (Ne, Te)",
-       "Units": "cm2",
+       "Units": "cm2"
     },
     "MetadataVersion": "M1.0",
     "Date_Time_DataCreated": "uploaded on 2022-05-26",
@@ -31,11 +35,9 @@
     "DataDependences":{
         "Dep1":{
             "CorrespondsTo":{
-                "ReactionTag": ["Tag1", "Tag2"],
+                "ReactionTag": ["Tag1"],
                 "Publication": "???",
-                "CopyOfMetadata": {
-                    "//": "==== FULL Copy of Metadata of the dependency ===="
-                }
+                "CopyOfMetadata": "Ab Initio"
             }
         }
     }

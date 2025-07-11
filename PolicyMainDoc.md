@@ -54,6 +54,9 @@ There is a close connection between the surface data and the boundary condition 
 
 Surface data is not limited to sputtering yields, but also includes reflection, surface recombination, implantation, etc, with dependencies not only on incident particle but also on surface state and composition/history. 
 
+-Cmt-:	Pwi/psi processes should be commented and maybe provide a draft example of json file from the pwiDB
+We need to have the link to the PSI data in particular in a view of SDtrimSP used in EIRENE for treating H2/D2/T2 release from the wall, but also just to have it uniform.
+
 
 ## BEST PRACTICES with working on A&M data
 
@@ -70,8 +73,7 @@ d)  reference to a detailed data descrition document (files structure, units etc
 e)  general description of the data (probaly at least as a comment,best containing the link to detailed description).
 f) at least general statement about the data validity range and specifying extrapolation methods
 g) at least general statement on the data accuracy and validation 
-h) sublayered metadata for all included data (whenever possible)
-and optionally containing further data description.
+h) sublayered metadata for all included data (whenever possible) and optionally containing further data description, including links to previous instances of the same dataset and indicate the significance of the changes from the previous version.
 We refer to the provided examples of the JSON metadata files described in the dedicated subsection "Metadata examples". 
 
 In addition to the mandatory points listerd above we recomend extend the metadata with optional points. 
@@ -87,8 +89,8 @@ These metadata blocks can be leveraged with the following practices:
 2)	Do data processing as automatic as possible and make the routines available (API approach is a good pratice) as open source with necessary documentation.
 3)	 I/O routines should be open source; they should be universally applicable to all files of that format (versioning of any format is a must).
 4) Possible use the pyvalem toolbox (https://github.com/xnx/pyvalem) to standardise the conversion of the data description to the metadata blocks.
-5) Establish a set of stadartized inter- and exrapolation routines (open source).
-6) With regard to licencing, it is preferrable to use the well-established sets of licences such as e.g. the creative commons CC BY-ND (Attribution-NoDerivatives) which  was suggested to allow use by commercial entities (i.e. all private fusion companies).  
+5) Establish a set of standardized inter- and exrapolation routines (open source).
+6) With regard to licencing, it is preferrable to use the well-established sets of licences such as e.g. the creative commons CC BY-ND (Attribution-NoDerivatives) which  was suggested to allow use by commercial entities (i.e. all private fusion companies). All data should be licensed and all data provided openly should remain as such. 
 // Footnote: List of licences https://creativecommons.org/share-your-work/cclicenses/
 7) Motivate and assist to proper referencing of the data:
     -	provides (if possible) a DOI that can be used to refer to the data source and a DOI for one or more publications describing the data
@@ -99,7 +101,8 @@ These metadata blocks can be leveraged with the following practices:
 
 8) Following the metadata format decided above, make any necessary changes to the IMAS Data Dictionary as it relates to such matters
 
-9) In accordance with F.A.I.R keep metadata open even for a closed datasets. Make it available even in case when the actual data is no longer accesable. 
+9) In accordance with F.A.I.R keep metadata open even for closed datasets. Make it available even in case when the actual data is no longer accessible. The same would apply to data that has restricted access.
+
 
 ## Next steps 
 
@@ -113,10 +116,30 @@ Process resoloved data is available from D.Fursa group (own database…) but it 
 
 4) Consider providing means to document automatically the particular dataset use experience (in the codes or analisis).
 
-
-
 5) Recommendation 1: That the IPP group lead by Ursel Fantz generate a new set of AMJUEL-like files based on the MCCC data as used by YACORA; that this file / these files be passed to Xavier Bonnin at ITER where he will rerun the hydrogen fueling scan and document any differences that might arise; these results will appear in a conference presentation and a paper.  After this the data should be made more generally available (e.g. at PLOUTOS meaning as a standard input for EIRENE, SOLPS and other related packages). 
 
 In the longer term, it should be considered if the AMJUEL format is the desired format going forward, and to identify an alternative format if appropriate.
 
 6) Recommendation 2. As part of the IMAS-ification activity within the TSVV-5 EUROfusion activity, have EIRENE and/or its ancillary program be able to read data in using the AMNS library from IMAS. Longer term, encourage other codes to support that format.
+
+7) The proposed initiative will requir focus attention and effort to be realised. Thus, it would necessary for the stakeholders to provide resources and, equally important, appoint liason officers to coordinate actions and maintain this activity in the long run.
+
+
+## Additional context 
+
+- IAEA is a neutral forum for scientific and practical discussions for all its 180 Member States. It provides platforms, such as databases, which are free of use and are publicly available. Databases follow the FAIR principle.
+- IAEA databases for A+M processes (CollisionDB) and pwi processes (pwiDB) use json metadata which include various information, such as reaction, process categorization (3-letter codes), data type, bibliographical reference, DOI, free comment line, fit coefficients (if any), information on the time when the data was added in the database, etc
+- This draft was circulated among participants of the IAEA Data Centres Network to get the feedback and concensus:
+o	ADAS (Atomic Data and Analysis Structure), UK
+o	Bariloche Atomic Centre, Argentina
+o	CRAAMD (China Research Association of Atomic and Molecular Data), China
+o	Forschungszentrum Jülich, Germany
+o	IAEA
+o	Queens University Belfast, UK
+o	KAERI (Korea Atomic Energy Research Institute), Korea
+o	Kurchatov Institute, Russia
+o	Korea Institute of Fusion Energy (KFE), Republic of Korea
+o	National Institute for Fusion Science (NIFS), Japan
+o	National Institute of Standards and Technology (NIST), USA
+
+-  A first effort towards the standartisation of the AMNS metadata was undertaken by EUROfusion as part of the Intergrated Tokamak Modelling (ITM) activities, and later absorbeb into the IMAS framework developed at ITER. The responcible officer for this activity over the years (Dr. D.Coster, IPP-Garching, Germany) is among the authors of this proposal.

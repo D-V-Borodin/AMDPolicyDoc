@@ -1,0 +1,59 @@
+{
+    "//": "======  Proxy for AMD recommended JSON MetaData fie  ======",
+    "//": "Based on CollisionDB header",
+    "//": "===========================================================",
+    "//": "----- MANDATORY ------",
+    "DataOrigin": "ADAS",
+    "AMD_ID": "ABC123",
+    "//": "Calculated/Compiled/Measured/Unspecified...",
+    "DataType": "Calculated",
+    "CalculationMethod": "CRM-LTE adf11(GCR)",
+    "BaseReaction": "B^(q) + e --> B^(q+1) + 2e",
+    "//": "----- optional! ------",
+    "Reactions": {
+        "Tag1": "B^0 + e --> B^+1 + 2e",
+        "Tag2": "B^+1 + e --> B^+2 + 2e",
+        "TagNN": "....."
+    },
+    "process_types": {
+        "EIZ": "Electron impact ionisation",
+        "Cmt": "Can be multiple"
+    },
+    "data_type": "Maxwellian-averaged rate coefficients",
+    "refs": {
+        "Ref1": {
+            "ReactionTag": "Tag1",
+            "ProcessType": "IZ",
+            "doi": "10.1016/j.adt.2019.05.002"
+        },
+        "Ref2": {
+            "ReactionTag": "Tag2",
+            "ProcessType": "IZ",
+            "Private communication": "Ghost of Landau"
+        }
+    },
+    "comment": "Generalized collision-radiative model",
+    "method": "Stationary CRM",
+    "MainDataContent": "Effective Rate coefficients for electronic-driven processes in hot plasma [cm-3*s]",
+    "DataRange": "Ne, Te characteristics for magnetized fusion plasmas, for all charges of B",
+    "Data_Structure+Units_Description": {
+       "Structure": "One data block per ionization state",
+       "Main value": "Rate (Ne, Te)",
+       "Units": "Te [eV], Ne [cm-3], Rate [cm^3/s]",
+       "Ref_DataDescrition": "https://www.adas.ac.uk/man/appxa-11.pdf"
+    },
+    "MetadataVersion": "M1.0",
+    "Date_Time_DataCreated": "2015-06-14 07:20:20.135592+00:00",
+    "Date_Time_EntryAdded": "2025-06-14 07:20:20.135592+00:00",
+    "DataDependencies":{
+        "Dep1":{
+            "CorrespondsTo":{
+                "ReactionTag": ["Tag1", "Tag2"],
+                "Publication": "???",
+                "CopyOfMetadata": {
+                    "//": "==== FULL Copy of Metadata of the dependency ===="
+                }
+            }
+        }
+    }
+}

@@ -143,3 +143,8 @@ o	National Institute for Fusion Science (NIFS), Japan
 o	National Institute of Standards and Technology (NIST), USA
 
 -  A first effort towards the standartisation of the AMNS metadata was undertaken by EUROfusion as part of the Intergrated Tokamak Modelling (ITM) activities, and later absorbeb into the IMAS framework developed at ITER. The responcible officer for this activity over the years (Dr. D.Coster, IPP-Garching, Germany) is among the authors of this proposal.
+
+
+# Note on the data quality assessment
+
+Policies formulated in the document do not directly lead to the data quality assesment. Stil, they provide an opportunity to track the history of the data production and use. That may enable following the validation experience by the data use in different applications and facilitate the work of any kind of evaluation committees.

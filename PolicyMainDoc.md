@@ -1,7 +1,22 @@
+<style type="text/css">
+   /* Indent Formatting */
+   /* Format: a-1-i-A-1-I */
+   ol {list-style-type: decimal;}
+   ol ol { list-style-type: lower-alpha;}
+   ol ol ol { list-style-type: lower-roman;}
+   ol ol ol ol { list-style-type: upper-alpha;}
+   ol ol ol ol ol { list-style-type: decimal;}
+   ol ol ol ol ol ol { list-style-type: upper-roman;}
+   /* https://www.w3schools.com/cssref/pr_list-style-type.asp */
+   /* https://stackoverflow.com/questions/11445453/css-set-li-indent */
+   /* https://stackoverflow.com/questions/13366820/how-do-you-make-lettered-lists-using-markdown */
+</style>
 
 # Policy proposal on the management of atomic and molecular data for fusion modelling
 
 2024-11-25 – 2025-07-11
+
+_Table of Contents:_
 
 <!-- TOC tocDepth:2..3 chapterDepth:2..6 -->
 
@@ -40,7 +55,7 @@ The following researches each with long experience of working (producing, utiliz
 8. Juri Romazanov, Forschungszentrum Jülich GmbH, Germany
 9. Dr. Kalle Heinola, IAEA, Austria
 
-It should be noted, that among those researches are are the director of ADAS (https://www.adas.ac.uk/), principal developers of SOLPS-ITER [(https://www.iter.org/](https://www.iter.org/node/20687/iter-unveils-new-tool-plasma-edge-modelling-solps-iter), ERO2.0, EIRENE (https://www.eirene.de/) and YACORA (https://www.yacora.de/), representative of MCCC data production (https://www.mccc-db.org/), long-term leader of EUROfusion AMNS activity so as the IAEA A&M Data Unit Head. Thus this intitiative group (involving indirectly also further colleagues) covers by the expertise the data production, maintainence (databases) and utilisation in fusion modelling. However, this group is absolute open for further extention by any relevant expert who shares the general view and is willing to contribute.
+It should be noted, that among those researches are are the director of ADAS (https://www.adas.ac.uk/), principal developers of SOLPS-ITER ([ITER press release](https://www.iter.org/node20687/iter-unveils-new-tool-plasma-edge-modelling-solps-iter)), ERO2.0, EIRENE ([EIRENE webpage](https://www.eirene.de/)) and YACORA ([YACORA online](https://www.yacora.de/)), representative of MCCC data production ([MCCC DB](https://www.mccc-db.org/)), long-term leader of EUROfusion AMNS activity so as the IAEA A&M Data Unit Head. Thus this intitiative group (involving indirectly also further colleagues) covers by the expertise the data production, maintainence (databases) and utilisation in fusion modelling. However, this group is absolute open for further extention by any relevant expert who shares the general view and is willing to contribute.
 
 ## 3. Purpose of this document
 
@@ -75,30 +90,31 @@ There is a close connection between surface data and boundary conditions at the 
 
 Surface data is not limited to sputtering yields, but also includes reflection, surface recombination, implantation, etc, with dependencies not only on incident particle but also on surface state and composition/history.
 
--Cmt-: Pwi/psi processes should be commented and maybe provide a draft example of JSON file from the pwiDB
-We need to have the link to the PSI data in particular in a view of SDtrimSP used in EIRENE for treating H2/D2/T2 release from the wall, but also just to have it uniform.
+[//]: <COMMENT: PWI processes should be commented and maybe provide a draft example of JSON file from the pwiDB. We need to have the link to the PSI data in particular in a view of SDtrimSP used in EIRENE for treating H2/D2/T2 release from the wall, but also just to have it uniform. >
 
 ## 6. BEST PRACTICES with working on A&M data
 
 All data should be properly documented, for which we recommend to use schemas and other similar technologies, rather than just describing the data with text.
 
 Each data file (or group of files) should contain a metadata block in an agreed format (we recommend JSON with a schema), mandatory, and containing at least:
-a) data origin (DOI, reference, etc...) and date of production
-a1) unique ID
-a2) clearly indicate the licensing associated with the data
-b) data type
-b1)  data acquisition method (calculated, compiled, measured, etc.)
-b2)  data nature type (cross-section, rate, etc.)
-c)  base process (e.g. base reaction or reaction type)
-d)  reference to a detailed data description document (files structure, units, etc).
-e)  general description of the data (probably at least as a comment, best containing the link to detailed description).
-f)  at least a general statement about the data validity range and specifying extrapolation methods
-g)  at least a general statement on the data accuracy and validation
-h)  sublayered metadata for all included data (whenever possible) and optionally containing further data description, including links to previous instances of the same dataset and indicating the significance of the changes from the previous version.
+
+1) data origin (DOI, reference, etc...) and date of production
+   1) unique ID
+   2) clearly indicate the licensing associated with the data
+2) data type
+   1) data acquisition method (calculated, compiled, measured, etc).
+   2) data nature type (cross-section, rate, etc.)
+3) base process (e.g. base reaction or reaction type)
+4) reference to a detailed data description document (files structure, units, etc).
+5) general description of the data (probably at least as a comment, best containing the link to detailed description).
+6) at least a general statement about the data validity range and specifying extrapolation methods
+7) at least a general statement on the data accuracy and validation
+8) sublayered metadata for all included data (whenever possible) and optionally containing further data description, including links to previous instances of the same dataset and indicating the significance of the changes from the previous version.
 
 In addition to the mandatory points listed above, we recomend to extend the metadata with various optional points.
-a) using the CollisionDB ontology (https://db-amdis.org/collisiondb/) to identify species, reactions (https://amdis.iaea.org/databases/processes/), etc.
-b) indicating the best interpolation method for data tables
+
+   1. using the CollisionDB ontology ([CollisionDB webpage](https://db-amdis.org/collisiondb/) to identify species, reaction type classification ([IAEA defined reaction types](https://amdis.iaea.org/databases/processes/)), etc.
+   2. indicating the best interpolation method for data tables
 
 We refer to the provided examples of the JSON metadata files described in the dedicated subsection "Metadata examples" as implementation proposals.
 
@@ -110,7 +126,6 @@ These metadata blocks can then be leveraged with the following practices:
 4) Possible use the pyvalem toolbox (https://github.com/xnx/pyvalem) to standardize the conversion of the data description to the metadata blocks.
 5) Establish a set of standardized inter- and extrapolation routines (open source).
 6) With regard to licensing, it is preferable to use one of the well-established sets of licenses such as e.g. the creative commons CC BY-ND (Attribution-No-Derivatives) which was suggested to allow use by commercial entities (i.e. all private fusion companies). All data should be licensed and all data provided openly should remain as such as e.g. [Creative Commons (CC) license list](https://creativecommons.org/share-your-work/cclicenses).
-
 7) Motivate and assist towards proper referencing of the data:
     - provides (if possible) a DOI that can be used to refer to the data source and a DOI for one or more publications describing the data
     - provides a DOI that relates to the validation method of the data
@@ -128,7 +143,7 @@ Other process-resolved data is available from the Curtin University group (with 
 
 2) Expansion of ADF15 line transitions lists available for spectroscopic data comparison with codes. The fundamental data may already exist but just needs post-processing. There is some ITPA-diagnostics effort to collate desired line lists. There may be merit in curating a smaller set of files specifically for AMNS purposes. Make the tools for producing such data open source, well documented, and commonly available.
 
-3) Some dedicated effort must be made to bring the finer data at the individual rate level to the coarser description needed by many codes (effective cooling rates, total radiation emissivity, total particle balance, total emissivity within a diagnostic-relevant wavelength range, ...).
+3) Some dedicated effort must be made to bring the finer data at the individual rate level to the coarser description needed by many codes (effective cooling rates, total radiation emissivity, total particle balance, total emissivity within a diagnostic-relevant wavelength range, etc.).
 
 4) Consider providing means to document automatically the particular dataset use experience (in the codes or post-processing analysis).
 
@@ -146,17 +161,17 @@ Other process-resolved data is available from the Curtin University group (with 
 - IAEA databases for A+M processes (CollisionDB) and PWI processes (pwiDB) use JSON metadata which include various information, such as reaction, process categorization (3-letter codes), data type, bibliographical reference, DOI, free comment line, fit coefficients (if any), information on the time when the data was added in the database, etc.
 - This draft was circulated among participants of the IAEA Data Centres Network to get feedback and consensus:
 
-1. ADAS (Atomic Data and Analysis Structure), UK
-2. Bariloche Atomic Centre, Argentina
-3. CRAAMD (China Research Association of Atomic and Molecular Data), China
-4. Forschungszentrum Jülich, Germany
-5. IAEA
-6. Queens University Belfast, UK
-7. KAERI (Korea Atomic Energy Research Institute), Korea
-8. Kurchatov Institute, Russia
-9. Korea Institute of Fusion Energy (KFE), Republic of Korea
-10. National Institute for Fusion Science (NIFS), Japan
-11. National Institute of Standards and Technology (NIST), USA
+  1. ADAS (Atomic Data and Analysis Structure), UK
+  2. Bariloche Atomic Centre, Argentina
+  3. CRAAMD (China Research Association of Atomic and Molecular Data), China
+  4. Forschungszentrum Jülich, Germany
+  5. IAEA
+  6. Queens University Belfast, UK
+  7. KAERI (Korea Atomic Energy Research Institute), Korea
+  8. Kurchatov Institute, Russia
+  9. Korea Institute of Fusion Energy (KFE), Republic of Korea
+  10. National Institute for Fusion Science (NIFS), Japan
+  11. National Institute of Standards and Technology (NIST), USA
 
 - A first effort towards the standardisation of the AMNS metadata was undertaken by EUROfusion as part of the Intergated Tokamak Modelling (ITM) task force activities, and later absorbed into the IMAS framework developed at ITER. The responsible officer for this activity over the years (Dr. D. Coster, IPP-Garching, Germany) is among the authors of this proposal.
 

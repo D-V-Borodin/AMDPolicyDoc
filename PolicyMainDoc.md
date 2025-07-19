@@ -99,7 +99,7 @@ All data should be properly documented, for which we recommend to use schemas an
 Each data file (or group of files) should contain a metadata block in an agreed format (we recommend JSON with a schema), mandatory, and containing at least:
 
 1) data origin (DOI, reference, etc...) and date of production
-   1) unique ID
+   1) unique ID (at least within the original database)
    2) clearly indicate the licensing associated with the data
 2) data type
    1) data acquisition method (calculated, compiled, measured, etc).
@@ -111,10 +111,10 @@ Each data file (or group of files) should contain a metadata block in an agreed 
 7) at least a general statement on the data accuracy and validation
 8) sublayered metadata for all included data (whenever possible) and optionally containing further data description, including links to previous instances of the same dataset and indicating the significance of the changes from the previous version.
 
-In addition to the mandatory points listed above, we recomend to extend the metadata with various optional points.
+In addition to the mandatory points listed above, we recomend to extend the metadata with various optional points, e.g.:
 
-   1. using the CollisionDB ontology ([CollisionDB webpage](https://db-amdis.org/collisiondb/) to identify species, reaction type classification ([IAEA defined reaction types](https://amdis.iaea.org/databases/processes/)), etc.
-   2. indicating the best interpolation method for data tables
+   1. using the CollisionDB ontology ([CollisionDB webpage](https://db-amdis.org/collisiondb/)) to identify species, reaction type classification ([IAEA defined reaction types](https://amdis.iaea.org/databases/processes/)), etc.
+   2. indicating the best interpolation method for data tables.
 
 We refer to the provided examples of the JSON metadata files described in the dedicated subsection "Metadata examples" as implementation proposals.
 
@@ -155,6 +155,19 @@ Other process-resolved data is available from the Curtin University group (with 
 
 8) The proposed initiative will requiree focused attention and effort to be realized. Thus, it would necessary for the stakeholders to provide resources and, equally important, appoint liaison officers to coordinate actions and maintain this activity in the long run.
 
+9) We suggest the new Data Quality Experience (DQE) databases (or forums) to be created to monitor the application and validation/verification effort of the A&M data utilising the same metadata as a cross-reference.
+   1) One should sepate the validation type:
+      1) Validaton with measured data by application of the data (often as a part of the code input) to the particular experiments
+      2) Verification of the data for consistency, sufficient resolution, absence of abnormalities, etc.
+      3) Uncertainty quamntification - relativating the uncertainties of the fundamental A&M data with the margins in the fusion-relevant modelling results.
+      4) Code-code validation, analysis of assumption sets.
+      5) Comparison of particular datasets.
+   2) The filling of those DQE databes should be as much as possible volunturelly by the researches taking the validation/verification effort. The additional effort to summarize the experice should be mimimased (at that it is anyway a part of any scientific pulication or a report on that kind of work). The obvious coomon good and popularisation of own scientific results can be sufficiently strong motivation, however one can think of additional stimulation mechanisms.
+   3) The DQE database should contain references to the related to the application/validation/verification effort publications.
+   4) The DQE database should, where possible, contain links to the input file packages allowing reproducing the simulations or analysis.
+   5) The DQE database can contain multiple entrees for each data piece, in fact that should be even encouraged. It is also only of advantage if there will be mutiple such databases, provided they refere to the same metadata, which will allow mutual cross-reference.
+   6) The DQE databases (after being filled to a certain extent) will be very useful for any kind of Dataset avaluation commitee.
+
 ## 8. Additional context
 
 - IAEA is a neutral forum for scientific and practical discussions for all its 180 Member States. It provides platforms, such as databases, which are free of use and are publicly available. Databases follow the FAIR principle.
@@ -177,4 +190,4 @@ Other process-resolved data is available from the Curtin University group (with 
 
 ## 9. Note on the data quality assessment
 
-Policies formulated in this document do not directly lead to the data quality assessment. Still, they provide an opportunity to track the history of the data production and use. That may enable following the validation experience by the data used in different applications and facilitate the work of any kind of evaluation committees.
+Policies formulated in this document do not directly lead to the data quality assessment. Still, they provide an opportunity to track the history of the data production and use based on the metadata in a standard format. That may enable following the validation experience by the data used (in particular if DQE databases will be created and florish) in different applications and facilitate the work of any kind of evaluation committees.

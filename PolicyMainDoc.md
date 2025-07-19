@@ -7,17 +7,25 @@
 
 ## Preamble
 
-This document was initiated as an outcome of the “Meeting on unified A&M data policies” in FZ Juelich (see https://indico.euro-fusion.org/event/3240/) triggered at the Decennial IAEA Technical Meeting on Atomic, Molecular and Plasma-Material Interaction Data for Fusion Science and Technology 2024 (AMPMI 2024) held at the University of Helsinki, Finland, with follow-up discussion supported by a dedicated IAEA TM (see https://conferences.iaea.org/e/GNAMPP-3). It reflects the views of the informal researcher group formed during those meetings, including indirect participants.
+This document was initiated as an outcome of the “Meeting on unified A&M data policies” in FZ Juelich (see https://indico.euro-fusion.org/event/3240/) triggered at the Decennial IAEA Technical Meeting on Atomic, Molecular and Plasma-Material Interaction Data for Fusion Science and Technology 2024 (AMPMI 2024 - https://conferences.iaea.org/event/384/) held at the University of Helsinki, Finland, with follow-up discussion supported by a dedicated IAEA TM (see https://conferences.iaea.org/e/GNAMPP-3). It reflects the views of the informal researcher group formed during those meetings, including indirect participants.
 This document is a product of those discussions and joint effort approved by consensus between the main participants listed in section "Participants".
-
-->1 Link Helsinki
 
 
 ## Participants
 
 The following researches each with long experience of working (producing, utilizing in codes and experiments, validating etc.) have jointly developed and support the following document to be addressed to ITER, EUROfusion and IAEA so as to all fusion research community:
 
-1. ...
+1. Dr. Dmitriy V. Borodin, Forschungszentrum Jülich GmbH, Germany
+2. Dr. Xavier Bonnin, ITER Organisation, France
+3. Dr. Martin O'Mullane, University of Strathclyde, UK
+4. Prof. Dmitry Fursa, Curtin University, Australia
+5. Dr. David Coster, IPP-Garching, Germany
+6. Prof. Dr. Ursel Fantz, Universität Augsburg, Germany
+7. Dr. Dirk Wunderlich, IPP-Garching, Germany
+8. Juri Romazanov, Forschungszentrum Jülich GmbH, Germany
+9. Dr. Kalle Heinola, IAEA, Austria 
+
+It should be noted, that among those researches are are the director of ADAS (https://www.adas.ac.uk/), principal developers of SOLPS-ITER [(https://www.iter.org/](https://www.iter.org/node/20687/iter-unveils-new-tool-plasma-edge-modelling-solps-iter), ERO2.0, EIRENE (https://www.eirene.de/) and YACORA (https://www.yacora.de/), representative of MCCC data production (https://www.mccc-db.org/), long-term leader of EUROfusion AMNS activity so as the IAEA A&M Data Unit Head. Thus this intitiative group (involving indirectly also further colleagues) covers by the expertise the data production, maintainence (databases) and utilisation in fusion modelling. However, this group is absolute open for further extention by any relevant expert who shares the general view and is willing to contribute.
 
 
 ## Purpose of this document

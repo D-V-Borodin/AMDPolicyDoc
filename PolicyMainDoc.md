@@ -43,10 +43,10 @@ This document is a product of those discussions and joint effort approved by con
 
 ## 2. Participants
 
-The following researches each with long experience of working (producing, utilizing in codes and experiments, validating etc.) have jointly developed and support the following document to be addressed to ITER, EUROfusion and IAEA so as to all fusion research community:
+The following researchers, each with long experience of working (producing, utilizing in codes and experiments, validating, etc.) have jointly developed and support the following document to be addressed to ITER, EUROfusion, IAEA, and then to all the fusion research community:
 
 1. Dr. Dmitriy V. Borodin, Forschungszentrum Jülich GmbH, Germany
-2. Dr. Xavier Bonnin, ITER Organisation, France
+2. Dr. Xavier Bonnin, ITER Organization, France
 3. Dr. Martin O'Mullane, University of Strathclyde, UK
 4. Prof. Dmitry Fursa, Curtin University, Australia
 5. Dr. David Coster, IPP-Garching, Germany
@@ -55,7 +55,7 @@ The following researches each with long experience of working (producing, utiliz
 8. Juri Romazanov, Forschungszentrum Jülich GmbH, Germany
 9. Dr. Kalle Heinola, IAEA, Austria
 
-It should be noted, that among those researches are are the director of ADAS (https://www.adas.ac.uk/), principal developers of SOLPS-ITER ([ITER press release](https://www.iter.org/node20687/iter-unveils-new-tool-plasma-edge-modelling-solps-iter)), ERO2.0, EIRENE ([EIRENE webpage](https://www.eirene.de/)) and YACORA ([YACORA online](https://www.yacora.de/)), representative of MCCC data production ([MCCC DB](https://www.mccc-db.org/)), long-term leader of EUROfusion AMNS activity so as the IAEA A&M Data Unit Head. Thus this intitiative group (involving indirectly also further colleagues) covers by the expertise the data production, maintainence (databases) and utilisation in fusion modelling. However, this group is absolute open for further extention by any relevant expert who shares the general view and is willing to contribute.
+It should be noted, that among those researchers are the director of ADAS (https://www.adas.ac.uk/), principal developers of SOLPS-ITER ([ITER press release](https://www.iter.org/node20687/iter-unveils-new-tool-plasma-edge-modelling-solps-iter)), ERO2.0, EIRENE ([EIRENE webpage](https://www.eirene.de/)) and YACORA ([YACORA online](https://www.yacora.de/)), representative of MCCC data production ([MCCC DB](https://www.mccc-db.org/)), long-term leader of EUROfusion AMNS activity, as well as the IAEA A&M Data Unit Head. Thus this intitiative group (involving indirectly also further colleagues) has expertise covering data production, maintenance (databases) and utilisation in fusion modelling. Naturally, this group is absolutely open to further extension by any relevant expert who shares its general view and is willing to contribute.
 
 ## 3. Purpose of this document
 
@@ -157,16 +157,16 @@ Other process-resolved data is available from the Curtin University group (with 
 
 9) We suggest the new Data Quality Experience (DQE) databases (or forums) to be created to monitor the application and validation/verification effort of the A&M data utilising the same metadata as a cross-reference.
    1) One should sepate the validation type:
-      1) Validaton with measured data by application of the data (often as a part of the code input) to the particular experiments
+      1) Validation with measured data by application of the data (often as a part of the code input) to the particular experiments
       2) Verification of the data for consistency, sufficient resolution, absence of abnormalities, etc.
-      3) Uncertainty quamntification - relativating the uncertainties of the fundamental A&M data with the margins in the fusion-relevant modelling results.
+      3) Uncertainty quantification - relating the uncertainties of the fundamental A&M data with the confidence intervals in the fusion-relevant modelling results.
       4) Code-code validation, analysis of assumption sets.
       5) Comparison of particular datasets.
-   2) The filling of those DQE databes should be as much as possible volunturelly by the researches taking the validation/verification effort. The additional effort to summarize the experice should be mimimased (at that it is anyway a part of any scientific pulication or a report on that kind of work). The obvious coomon good and popularisation of own scientific results can be sufficiently strong motivation, however one can think of additional stimulation mechanisms.
-   3) The DQE database should contain references to the related to the application/validation/verification effort publications.
-   4) The DQE database should, where possible, contain links to the input file packages allowing reproducing the simulations or analysis.
-   5) The DQE database can contain multiple entrees for each data piece, in fact that should be even encouraged. It is also only of advantage if there will be mutiple such databases, provided they refere to the same metadata, which will allow mutual cross-reference.
-   6) The DQE databases (after being filled to a certain extent) will be very useful for any kind of Dataset avaluation commitee.
+   2) The filling of those DQE databes should be as much as possible voluntary by the researchers undertaking the validation/verification effort. The additional effort to summarize the experience should be minimised (at that it is anyway a part of any scientific pulication or a report on that kind of work). The obvious common good and popularisation of one's own scientific results can be a sufficiently strong motivation, however one can think of additional stimulation mechanisms.
+   3) The DQE database should contain references to the related application/validation/verification effort publications.
+   4) The DQE database should, where possible, contain links to the input file packages allowing reproducibility of the simulations or analysis.
+   5) The DQE database can contain multiple entries for each data piece, in fact that should be even encouraged. It is also only of advantage if there will be multiple such databases, provided they refer to the same metadata, which will allow mutual cross-reference.
+   6) The DQE databases (after being filled to a certain extent) will be very useful for any kind of dataset evaluation committee.
 
 ## 8. Additional context
 
@@ -190,4 +190,4 @@ Other process-resolved data is available from the Curtin University group (with 
 
 ## 9. Note on the data quality assessment
 
-Policies formulated in this document do not directly lead to the data quality assessment. Still, they provide an opportunity to track the history of the data production and use based on the metadata in a standard format. That may enable following the validation experience by the data used (in particular if DQE databases will be created and florish) in different applications and facilitate the work of any kind of evaluation committees.
+Policies formulated in this document do not directly lead to the data quality assessment. Still, they provide an opportunity to track the history of the data production and use based on the metadata in a standard format. That may enable following the validation experience by the data used (in particular if DQE databases will be created and flourish) in different applications and facilitate the work of any kind of evaluation committees.

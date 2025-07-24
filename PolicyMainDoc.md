@@ -155,18 +155,6 @@ Other process-resolved data is available from the Curtin University group (with 
 
 8) The proposed initiative will requiree focused attention and effort to be realized. Thus, it would necessary for the stakeholders to provide resources and, equally important, appoint liaison officers to coordinate actions and maintain this activity in the long run.
 
-9) We suggest the new Data Quality Experience (DQE) databases (or forums) to be created to monitor the application and validation/verification effort of the A&M data utilising the same metadata as a cross-reference.
-   1) One should sepate the validation type:
-      1) Validation with measured data by application of the data (often as a part of the code input) to the particular experiments
-      2) Verification of the data for consistency, sufficient resolution, absence of abnormalities, etc.
-      3) Uncertainty quantification - relating the uncertainties of the fundamental A&M data with the confidence intervals in the fusion-relevant modelling results.
-      4) Code-code validation, analysis of assumption sets.
-      5) Comparison of particular datasets.
-   2) The filling of those DQE databes should be as much as possible voluntary by the researchers undertaking the validation/verification effort. The additional effort to summarize the experience should be minimised (at that it is anyway a part of any scientific pulication or a report on that kind of work). The obvious common good and popularisation of one's own scientific results can be a sufficiently strong motivation, however one can think of additional stimulation mechanisms.
-   3) The DQE database should contain references to the related application/validation/verification effort publications.
-   4) The DQE database should, where possible, contain links to the input file packages allowing reproducibility of the simulations or analysis.
-   5) The DQE database can contain multiple entries for each data piece, in fact that should be even encouraged. It is also only of advantage if there will be multiple such databases, provided they refer to the same metadata, which will allow mutual cross-reference.
-   6) The DQE databases (after being filled to a certain extent) will be very useful for any kind of dataset evaluation committee.
 
 ## 8. Additional context
 
@@ -189,5 +177,20 @@ Other process-resolved data is available from the Curtin University group (with 
 - A first effort towards the standardisation of the AMNS metadata was undertaken by EUROfusion as part of the Intergated Tokamak Modelling (ITM) task force activities, and later absorbed into the IMAS framework developed at ITER. The responsible officer for this activity over the years (Dr. D. Coster, IPP-Garching, Germany) is among the authors of this proposal.
 
 ## 9. Note on the data quality assessment
+
+ A a spin-off of the the proposed effort on the standartized metadata, we suggest the new Data Quality Experience (DQE) databases (or forums) to be created to monitor the application and validation/verification effort of the A&M data utilising the same metadata as a cross-reference.
+
+   1) One should sepate the validation type:
+      1) Validation with measured data by application of the data (often as a part of the code input) to the particular experiments
+      2) Verification of the data for consistency, sufficient resolution, absence of abnormalities, etc.
+      3) Uncertainty quantification - relating the uncertainties of the fundamental A&M data with the confidence intervals in the fusion-relevant modelling results.
+      4) Code-code validation, analysis of assumption sets.
+      5) Comparison of particular datasets.
+   2) The filling of those DQE databes should be as much as possible voluntary by the researchers undertaking the validation/verification effort. The additional effort to summarize the experience should be minimised (at that it is anyway a part of any scientific pulication or a report on that kind of work). The obvious common good and popularisation of one's own scientific results can be a sufficiently strong motivation, however one can think of additional stimulation mechanisms.
+   3) The creation and maintainence effort of the DQE databases is not meant to be on the origianal data providers. It is expected to be a separate independent projects supported by the major stakeholders. Of corse the bases will most probably cover just a part of the data field in the interest of the the particular owner. Still, the standartized metadata will facilitate that they will complement each other.
+   4) The DQE database should contain references to the related application/validation/verification effort publications.
+   5) The DQE database should, where possible, contain links to the input file packages allowing reproducibility of the simulations or analysis.
+   6) The DQE database can contain multiple entries for each data piece, in fact that should be even encouraged. It is also only of advantage if there will be multiple such databases, provided they refer to the same metadata, which will allow mutual cross-reference.
+   7) The DQE databases (after being filled to a certain extent) will be very useful for any kind of dataset evaluation committee.
 
 Policies formulated in this document do not directly lead to the data quality assessment. Still, they provide an opportunity to track the history of the data production and use based on the metadata in a standard format. That may enable following the validation experience by the data used (in particular if DQE databases will be created and flourish) in different applications and facilitate the work of any kind of evaluation committees.

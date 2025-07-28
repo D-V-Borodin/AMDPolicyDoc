@@ -52,7 +52,7 @@ The following researchers, each with long experience of working (producing, util
 5. Dr. David Coster, IPP-Garching, Germany
 6. Prof. Dr. Ursel Fantz, Universität Augsburg, Germany
 7. Dr. Dirk Wunderlich, IPP-Garching, Germany
-8. Juri Romazanov, Forschungszentrum Jülich GmbH, Germany
+8. Dr. Juri Romazanov, Forschungszentrum Jülich GmbH, Germany
 9. Dr. Kalle Heinola, IAEA, Austria
 
 It should be noted, that among those researchers are the director of ADAS (https://www.adas.ac.uk/), principal developers of SOLPS-ITER ([ITER press release](https://www.iter.org/node20687/iter-unveils-new-tool-plasma-edge-modelling-solps-iter)), ERO2.0, EIRENE ([EIRENE webpage](https://www.eirene.de/)) and YACORA ([YACORA online](https://www.yacora.de/)), representative of MCCC data production ([MCCC DB](https://www.mccc-db.org/)), long-term leader of EUROfusion AMNS activity, as well as the IAEA A&M Data Unit Head. Thus this intitiative group (involving indirectly also further colleagues) has expertise covering data production, maintenance (databases) and utilisation in fusion modelling. Naturally, this group is absolutely open to further extension by any relevant expert who shares its general view and is willing to contribute.
@@ -155,7 +155,7 @@ Other process-resolved data is available from the Curtin University group (with 
 
 8) The proposed initiative will requiree focused attention and effort to be realized. Thus, it would necessary for the stakeholders to provide resources and, equally important, appoint liaison officers to coordinate actions and maintain this activity in the long run.
 
-
+Ivanhoe
 ## 8. Additional context
 
 - IAEA is a neutral forum for scientific and practical discussions for all its 180 Member States. It provides platforms, such as databases, which are free of use and are publicly available. Databases follow the FAIR principle.
@@ -178,7 +178,7 @@ Other process-resolved data is available from the Curtin University group (with 
 
 ## 9. Note on the data quality assessment
 
- A a spin-off of the the proposed effort on the standartized metadata, we suggest the new Data Quality Experience (DQE) databases (or forums) to be created to monitor the application and validation/verification effort of the A&M data utilising the same metadata as a cross-reference.
+ As a spin-off of the the proposed effort on the standartized metadata, we suggest the new Data Quality Experience (DQE) databases (or forums) to be created to monitor the application and validation/verification effort of the A&M data utilising the same metadata as a cross-reference.
 
    1) One should sepate the validation type:
       1) Validation with measured data by application of the data (often as a part of the code input) to the particular experiments

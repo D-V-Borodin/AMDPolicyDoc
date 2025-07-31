@@ -124,7 +124,7 @@ These metadata blocks can then be leveraged with the following practices:
 3. I/O routines should be open source; they should be universally applicable to all files of that format (versioning of any format is a must).
 4. Possible use the pyvalem toolbox (https://github.com/xnx/pyvalem) to standardize the conversion of the data description to the metadata blocks.
 5. Establish a set of standardized inter- and extrapolation routines (open source).
-6. With regard to licensing, it is preferable to use one of the well-established sets of licenses such as e.g. the creative commons CC BY-ND (Attribution-No-Derivatives) which was suggested to allow use by commercial entities (i.e. all private fusion companies). All data should be licensed and all data provided openly should remain as such as e.g. [Creative Commons (CC) license list](https://creativecommons.org/share-your-work/cclicenses).
+6. All data should be licensed and all data provided openly should remain as such. With regard to licensing, it is strongly remommended to use one of the well-established sets of licenses as e.g. [Creative Commons (CC) license list](https://creativecommons.org/share-your-work/cclicenses). We recommend to use less restrictive licenses e.g. the creative commons CC BY-SA (Attribution-ShareAlike) which was suggested to allow use by commercial entities (i.e. all private fusion companies), but we understand that it may be necessary in some cases to limit the availabilty of the data. It should be noted that using specific types of licenses may restrict the applicability of data as input of codes producing effective data that itself is intended to be distributed. For example, CC BY-ND  prohibits the distribution of material built upon data using this license. Nontheless the metadata should be provided for all cases, separatelly licensed (as open as possible).
 7. Motivate and assist towards proper referencing of the data:
     - provides (if possible) a DOI that can be used to refer to the data source and a DOI for one or more publications describing the data
     - provides a DOI that relates to the validation method of the data
@@ -132,7 +132,7 @@ These metadata blocks can then be leveraged with the following practices:
     - provides references to use cases of the data with indication of success.
     - provides references to validation cases (if available) including the validation category.
 8. Following the metadata format decided above, make any necessary changes to the IMAS Data Dictionary as it relates to such matters.
-9. In accordance with F.A.I.R., keep metadata open even for datasets with restricted access. Also make it available even in case when the actual data is no longer accessible.
+9.  In accordance with F.A.I.R., keep metadata open even for datasets with restricted access. Also make it available even in case when the actual data is no longer accessible.
 
 ## 7. Next steps
 

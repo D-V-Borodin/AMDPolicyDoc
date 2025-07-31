@@ -1,0 +1,80 @@
+{
+    "//": "======  Proxy for AMD recomended JSON MetaData fie  ======",
+    "//": "Based on CollisionDB header",
+    "//": "==========================================================",
+    "//": "----- MANDATORY ------",
+    "DataOrigin": "MCCC: Molecular convergent close-coupling group,Curtin University",
+    "AMD_ID": "???",
+    "//": "Calculated/Compiled/Measured/Unspecified...",
+    "DataType": "Calculated",
+    "CalculationMethod": "MCCC: Molecular convergent close-coupling",
+    "BaseReaction": "H2 X(1Sigma+g) v=0 + e --> H2 B(1SIGMA+u) v=1 + e",
+    "//": "----- optional! ------",
+    "process_types": {
+        "EEX": "Electron impact excitaion"
+        "EXV": "Vibrational Excitation"},
+    "data_type": "Cross section | uploaded on 2022-05-26",
+    "refs": "Scarlett et al., Atom. Data Nucl. Data Tables (2021)",
+    "comment": "MCCC calculations of vibrationally-resolved electronic excitation of H2, adiabatic nuclei calculations performed with the spheroidal MCCC(210) model",
+    "MainDataContent": "cross section",
+    "DataRange": "11.3468 eV (threshold) to 500 eV",
+    "columns": [
+        {
+            "name": "E",
+            "units": "eV"
+        },
+        {
+            "name": "sigma",
+            "units": "a_0^2"
+        }
+    ],
+    "Date_Time_DataCreated": "uploaded on 2022-05-26",
+        "metadata_version": "M1.0"
+}
+ 1.13468E+01   0.00000E+00
+  1.15000E+01   8.18369E-04
+  1.20000E+01   3.15439E-03
+  1.25000E+01   4.95082E-03
+  1.30000E+01   6.49427E-03
+  1.35000E+01   7.86272E-03
+  1.40000E+01   9.09922E-03
+  1.45000E+01   1.02297E-02
+  1.50000E+01   1.12717E-02
+  1.55000E+01   1.22382E-02
+  1.60000E+01   1.31389E-02
+  1.65000E+01   1.39812E-02
+  1.70000E+01   1.47714E-02
+  1.75000E+01   1.55147E-02
+  1.80000E+01   1.62152E-02
+  1.85000E+01   1.68767E-02
+  1.90000E+01   1.75023E-02
+  1.95000E+01   1.80952E-02
+  2.00000E+01   1.86574E-02
+  2.10000E+01   1.96980E-02
+  2.20000E+01   2.06381E-02
+  2.30000E+01   2.14896E-02
+  2.40000E+01   2.22629E-02
+  2.50000E+01   2.29663E-02
+  2.60000E+01   2.36069E-02
+  2.70000E+01   2.41907E-02
+  2.80000E+01   2.47230E-02
+  2.90000E+01   2.52088E-02
+  3.00000E+01   2.56517E-02
+  3.50000E+01   2.73436E-02
+  4.00000E+01   2.83822E-02
+  4.50000E+01   2.89740E-02
+  5.00000E+01   2.92536E-02
+  6.00000E+01   2.92117E-02
+  7.00000E+01   2.87020E-02
+  8.00000E+01   2.79533E-02
+  9.00000E+01   2.70910E-02
+  1.00000E+02   2.61844E-02
+  1.25000E+02   2.39512E-02
+  1.50000E+02   2.19275E-02
+  2.00000E+02   1.86378E-02
+  2.50000E+02   1.61813E-02
+  3.00000E+02   1.43145E-02
+  3.50000E+02   1.28554E-02
+  4.00000E+02   1.16814E-02
+  4.50000E+02   1.07082E-02
+  5.00000E+02   9.87737E-03

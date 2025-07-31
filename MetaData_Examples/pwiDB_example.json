@@ -1,0 +1,162 @@
+{
+  "process": "Sputtering",
+  "process_types": [
+    {
+      "abbreviation": "MPS",
+      "description": "Physical Sputtering"
+    },
+    {
+      "abbreviation": "MSP",
+      "description": "Sputtering"
+    }
+  ],
+  "surface": "Li",
+  "surface_phase": "a",
+  "species": {
+    "text": "D",
+    "charge": 0
+  },
+  "temperature": 300,
+  "comment": "",
+  "refs": [
+    {
+      "id": 1,
+      "authors": "P. Krstic, E. Ostrowski, F. Domínguez-Gutierrez, S. Abe, B. Koel",
+      "title": "Sputtering and reflection processes from amorphous lithium surfaces by low-energy impacts of H and D atoms and D2 molecules",
+      "journal": "Journal of Nuclear Materials",
+      "volume": "568",
+      "page_start": "153848",
+      "page_end": "",
+      "article_number": "153848",
+      "year": 2022,
+      "note": "",
+      "doi": "10.1016/j.jnucmat.2022.153848",
+      "bibcode": "2022JNuM..56853848K",
+      "url": "https://dx.doi.org/10.1016/j.jnucmat.2022.153848"
+    }
+  ],
+  "json_data": [
+    {
+      "x1": {
+        "name": "E",
+        "units": "eV",
+        "value": 5
+      },
+      "x2": {
+        "name": "angle",
+        "units": "deg",
+        "data": {
+          "0.0": {
+            "P": 0.003,
+            "unc": 0.00173
+          },
+          "45.0": {
+            "P": 0.00204,
+            "unc": 0.00144
+          }
+        }
+      }
+    },
+    {
+      "x1": {
+        "name": "E",
+        "units": "eV",
+        "value": 10
+      },
+      "x2": {
+        "name": "angle",
+        "units": "deg",
+        "data": {
+          "0.0": {
+            "P": 0.00374,
+            "unc": 0.00216
+          },
+          "45.0": {
+            "P": 0.0143,
+            "unc": 0.00382
+          }
+        }
+      }
+    },
+    {
+      "x1": {
+        "name": "E",
+        "units": "eV",
+        "value": 25
+      },
+      "x2": {
+        "name": "angle",
+        "units": "deg",
+        "data": {
+          "0.0": {
+            "P": 0.038,
+            "unc": 0.00616
+          },
+          "45.0": {
+            "P": 0.0826,
+            "unc": 0.00973
+          }
+        }
+      }
+    },
+    {
+      "x1": {
+        "name": "E",
+        "units": "eV",
+        "value": 50
+      },
+      "x2": {
+        "name": "angle",
+        "units": "deg",
+        "data": {
+          "0.0": {
+            "P": 0.0473,
+            "unc": 0.0069
+          },
+          "45.0": {
+            "P": 0.161,
+            "unc": 0.0129
+          }
+        }
+      }
+    },
+    {
+      "x1": {
+        "name": "E",
+        "units": "eV",
+        "value": 75
+      },
+      "x2": {
+        "name": "angle",
+        "units": "deg",
+        "data": {
+          "0.0": {
+            "P": 0.07,
+            "unc": 0.00831
+          }
+        }
+      }
+    },
+    {
+      "x1": {
+        "name": "E",
+        "units": "eV",
+        "value": 100
+      },
+      "x2": {
+        "name": "angle",
+        "units": "deg",
+        "data": {
+          "0.0": {
+            "P": 0.1,
+            "unc": 0.0139
+          },
+          "45.0": {
+            "P": 0.187,
+            "unc": 0.0138
+          }
+        }
+      }
+    }
+  ]
+}

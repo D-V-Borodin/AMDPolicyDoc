@@ -54,7 +54,7 @@ The following researchers, each with long experience of working (producing, util
 8. Dr. Juri Romazanov, Forschungszentrum Jülich GmbH, Germany
 9. Dr. Kalle Heinola, IAEA, Austria
 
-It should be noted, that among those researchers are the director of ADAS (https://www.adas.ac.uk/), principal developers of SOLPS-ITER ([ITER press release](https://www.iter.org/node20687/iter-unveils-new-tool-plasma-edge-modelling-solps-iter)), ERO2.0, EIRENE ([EIRENE webpage](https://www.eirene.de/)) and YACORA ([YACORA online](https://www.yacora.de/)), representative of MCCC data production ([MCCC DB](https://www.mccc-db.org/)), long-term leader of EUROfusion AMNS activity, as well as the IAEA A&M Data Unit Head. Thus this intitiative group (involving indirectly also further colleagues) has expertise covering data production, maintenance (databases) and utilization in fusion modelling. Naturally, this group is absolutely open to further extension by any relevant expert who shares its general view and is willing to contribute.
+It should be noted, that among those researchers are the director of ADAS (https://www.adas.ac.uk/), principal developers of SOLPS-ITER ([ITER press release](https://www.iter.org/node/20687/new-solps-iter-code-version-launched), [[Ref.]](https://www.jspf.or.jp/PFR/PFR_articles/pfr2016/pfr2016_11-1403102.html)), ERO2.0, EIRENE ([EIRENE webpage](https://www.eirene.de/)) and YACORA ([YACORA online](https://www.yacora.de/)), representative of MCCC data production ([MCCC DB](https://www.mccc-db.org/)), long-term leader of EUROfusion AMNS activity, as well as the [IAEA A&M Data Unit](https://amdis.iaea.org) Head. Thus this intitiative group (involving indirectly also further colleagues) has expertise covering data production, maintenance (databases) and utilization in fusion modelling. Naturally, this group is absolutely open to further extension by any relevant expert who shares its general view and is willing to contribute.
 
 ## 3. Purpose of this document
 
@@ -63,7 +63,7 @@ The initiative group aims at reaching concrete goals in the interest of fundamen
 
 ## 4. Executive summary
 
-The informal initiative group, inspired by the F.A.I.R. principles, proposes for consideration:
+The informal initiative group, inspired by the FAIR [[Ref.](https://doi.org/10.1038/sdata.2016.18)] principles, proposes for consideration:
 
 1. A set of data management policies - “best practices”  regarding joint work on A&M data. It is based on experience of fusion-relevant datasets development. Those policies are suggested for a broader use far beyond the initiative group.
 2. A proposal for next steps to be undertaken in the establishment and extension of the fusion-relevant A&M databases, development of CRMs (collisional-radiative models), and usage inside fusion codes.
@@ -124,7 +124,7 @@ These metadata blocks can then be leveraged with the following practices:
 3. I/O routines should be open source; they should be universally applicable to all files of that format (versioning of any format is a must).
 4. Possible use the pyvalem toolbox (https://github.com/xnx/pyvalem) to standardize the conversion of the data description to the metadata blocks.
 5. Establish a set of standardized inter- and extrapolation routines (open source).
-6. All data should be licensed and all data provided openly should remain as such. With regard to licensing, it is strongly remommended to use one of the well-established sets of licenses as e.g. [Creative Commons (CC) license list](https://creativecommons.org/share-your-work/cclicenses). We recommend to use less restrictive licenses e.g. the creative commons CC BY-SA (Attribution-ShareAlike) which was suggested to allow use by commercial entities (i.e. all private fusion companies), but we understand that it may be necessary in some cases to limit the availabilty of the data. It should be noted that using specific types of licenses may restrict the applicability of data as input of codes producing effective data that itself is intended to be distributed. For example, CC BY-ND  prohibits the distribution of material built upon data using this license. Nontheless the metadata should be provided for all cases, separatelly licensed (as open as possible).
+6. All data should be licensed and all data provided openly should remain as such. With regard to licensing, it is strongly remommended to use one of the well-established sets of licenses as e.g. [Creative Commons (CC) license list](https://creativecommons.org/share-your-work/cclicenses). We recommend to use less restrictive licenses e.g. the creative commons CC BY-SA (Attribution-ShareAlike) which was suggested to allow use by commercial entities (i.e. all private fusion companies), but we understand that it may be necessary in some cases to limit the availabilty of the data. It should be noted that using specific types of licenses may restrict the applicability of data as input of codes producing effective data that itself is intended to be distributed. For example, CC BY-ND  prohibits the distribution of material built upon data using this license. Nontheless the metadata should be provided for all cases (see point 9), separatelly licensed (as open as possible).
 7. Motivate and assist towards proper referencing of the data:
     - provides (if possible) a DOI that can be used to refer to the data source and a DOI for one or more publications describing the data
     - provides a DOI that relates to the validation method of the data
@@ -132,27 +132,23 @@ These metadata blocks can then be leveraged with the following practices:
     - provides references to use cases of the data with indication of success.
     - provides references to validation cases (if available) including the validation category.
 8. Following the metadata format decided above, make any necessary changes to the IMAS Data Dictionary as it relates to such matters.
-9.  In accordance with F.A.I.R., keep metadata open even for datasets with restricted access. Also make it available even in case when the actual data is no longer accessible.
+9. In accordance with FAIR, keep metadata open even for datasets with restricted access. Also make it available even in case when the actual data is no longer accessible.
 
 ## 7. Next steps
 
-1. New data requests should be prioritized. At present, some of the identified needs include electron-impact W excitation, and (H,D,T)<sup>+</sup> + W charge exchange.
-Those can come from different atomic/molecular data providers (ADAS, IAEA database, NIFS, NIST, etc.). Often the provided data takes the final form of an ADAS dataset, mainly the ADF11 and ADF15 formats.
-Other process-resolved data is available from the Curtin University group (with its own database) but it is recommended to access the data via CollisionDB (IAEA). These are fundamental cross-section data (including differential ones). These data may partially be already available in ADAS; if missing, but higher level data is needed, the participants of this group welcome effort to put the data (after reasonable checks) into ADAS.
+1. A working group should be established to elaborate on the metadata description (mandatory and recommended parts).
 
-2. Expansion of ADF15 line transitions lists available for spectroscopic data comparison with codes. The fundamental data may already exist but just needs post-processing. There is some ITPA-diagnostics effort to collate desired line lists. There may be merit in curating a smaller set of files specifically for AMNS purposes. Make the tools for producing such data open source, well documented, and commonly available.
+2. New data requests should be prioritized. Those can come from differen atomic/molecular data providers (ADAS, IAEA database, NIFS, NIST, etc.). Often the provided data takes the final form of an ADAS dataset, mainly the ADF11 and ADF15 formats. Other process-resolved data is available from the Curtin University group (with its own database) but it is recommended to access the data via CollisionDB (IAEA). These are fundamental cross-section data (including differential ones). These data may partially be already available in ADAS; if missing, but higher level data is needed, the participants of this group welcome effort to put the data (after reasonable checks) into ADAS.
 
-3. Some dedicated effort must be made to bring the finer data at the individual rate level to the coarser description needed by many codes (effective cooling rates, total radiation emissivity, total particle balance, total emissivity within a diagnostic-relevant wavelength range, etc.).
+3. Expansion of ADF15 line transitions lists available for spectroscopic data comparison with codes. The fundamental data may already exist but just needs post-processing. There is some ITPA-diagnostics effort to collate desired line lists. There may be merit in curating a smaller set of files specifically for AMNS purposes. Make the tools for producing such data open source, well documented, and commonly available.
 
-4. Consider providing means to document automatically the particular dataset use experience (in the codes or post-processing analysis).
+4. Some dedicated effort must be made to bring the finer data at the individual rate level to the coarser description needed by many codes (effective cooling rates, total radiation emissivity, total particle balance, total emissivity within a diagnostic-relevant wavelength range, etc.).
 
-5. That the IPP group lead by Ursel Fantz generate a new set of AMJUEL-like files based on the MCCC data as used by YACORA; that this file / these files be passed to Xavier Bonnin at ITER where he will rerun the hydrogen fueling scan and document any differences that might arise; these results to appear in a conference presentation and a paper.  After this the data should be made more generally available (e.g. at PLOUTOS meaning as a standard input for EIRENE, SOLPS, and other related packages).
+5. Consider providing means to document automatically the particular dataset use experience (in the codes or post-processing analysis).
 
 6. In the longer term, it should be evaluated whether the AMJUEL format is the desired format going forward, and to identify an alternative format if appropriate.
 
-7. As part of the IMAS-ification activity within the TSVV-5 EUROfusion activity, have EIRENE and/or its ancillary programs be able to read data in using the AMNS library from IMAS. Longer term, encourage other codes to support that format.
-
-8. The proposed initiative will require focused attention and effort to be realized. Thus, it would necessary for the stakeholders to provide resources and, equally important, appoint liaison officers to coordinate actions and maintain this activity in the long run.
+7. The proposed initiative will require focused attention and effort to be realized. Thus, it would necessary for the stakeholders to provide resources and, equally important, provide a contact point to coordinate actions and maintain this activity in the long run.
 
 ## 8. Additional context
 

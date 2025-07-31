@@ -8,6 +8,13 @@ A third meeting was held on 9-11 July at the IAEA Headquarters in Vienna under t
 
 We kindly request your attention, collaboration and support in this endeavour. Please distribute it to any interested party within your institution so that they may comment and suggest improvements to our proposal. After getting the feedback and clear consesus from the community we aim to seek support and participation from the stakeholders to implement this initiative in particular from ITER, EUROFusion, and IAEA and its networks.
 
+1) GitHub refence with invitation for edits
+2) Deadlines
+3) Meeting?.. Explantion presentation (remote)
+4) Obligations?
+5) Examples are worked on, encourage more examples
+6) The feedback way... 
+
 Best regards,
 
 David Coster, Max Planck Institute for Plasma Physics (Germany);
